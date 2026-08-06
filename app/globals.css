@@ -1,0 +1,209 @@
+@import 'tailwindcss';
+
+/* Self-hosted brand type — Poppins (display/labels), Inter (body) */
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+:root {
+  /* Navy */
+  --color-navy-950: #050d1b;
+  --color-navy-900: #071c3b;
+  --color-navy-800: #0f2a4f;
+  --color-navy-700: #1c3c68;
+  --color-navy-600: #2c5185;
+
+  /* Gold */
+  --color-gold-700: #8a611a;
+  --color-gold-600: #a9791c;
+  --color-gold-500: #c9962b;
+  --color-gold-400: #d9ac48;
+  --color-gold-300: #e7c368;
+  --color-gold-200: #f2ddaa;
+  --color-gold-100: #f8ecd2;
+
+  /* Neutrals */
+  --color-ivory: #fbf8f2;
+  --color-paper: #f3ecdc;
+  --color-paper-line: #e3d7b6;
+  --color-ink: #17140f;
+  --color-ink-soft: #55503f;
+  --color-ink-faint: #8b8571;
+
+  /* Verification status — used only on the /verify result card */
+  --color-status-verified: #1f7a4d;
+  --color-status-verified-soft: #e4f2ea;
+  --color-status-expired: #b4650c;
+  --color-status-expired-soft: #faedde;
+  --color-status-error: #b3261e;
+  --color-status-error-soft: #fbeae9;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-ink);
+}
+
+@theme inline {
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+
+  --color-gold-700: var(--color-gold-700);
+  --color-gold-600: var(--color-gold-600);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-300: var(--color-gold-300);
+  --color-gold-200: var(--color-gold-200);
+  --color-gold-100: var(--color-gold-100);
+
+  --color-ivory: var(--color-ivory);
+  --color-paper: var(--color-paper);
+  --color-paper-line: var(--color-paper-line);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-faint: var(--color-ink-faint);
+
+  --color-status-verified: var(--color-status-verified);
+  --color-status-verified-soft: var(--color-status-verified-soft);
+  --color-status-expired: var(--color-status-expired);
+  --color-status-expired-soft: var(--color-status-expired-soft);
+  --color-status-error: var(--color-status-error);
+  --color-status-error-soft: var(--color-status-error-soft);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-label: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.9s ease both;
+  --animate-spin-slow: spin-slow 90s linear infinite;
+  --animate-spin-slower: spin-slow 130s linear infinite reverse;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-gold-200);
+  color: var(--color-navy-900);
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.legal-prose h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--color-navy-900);
+  font-size: 1.5rem;
+  margin-top: 2.75rem;
+}
+
+.legal-prose h2:first-child {
+  margin-top: 0;
+}
+
+.legal-prose p {
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-ink-soft);
+}
+
+.legal-prose ul {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.legal-prose li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-ink-soft);
+}
+
+.legal-prose li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  height: 5px;
+  width: 5px;
+  border-radius: 999px;
+  background: var(--color-gold-500);
+}
+
+.legal-prose strong {
+  color: var(--color-navy-900);
+  font-weight: 600;
+}
