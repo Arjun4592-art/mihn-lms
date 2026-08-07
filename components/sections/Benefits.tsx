@@ -1,5 +1,5 @@
-import { Eyebrow } from "@/components/ui/Eyebrow";
-import { Reveal } from "@/components/ui/Reveal";
+import { Eyebrow } from '@/components/ui/Eyebrow'
+import { Reveal } from '@/components/ui/Reveal'
 import {
   IconScrollCert,
   IconIdCard,
@@ -7,62 +7,68 @@ import {
   IconPath,
   IconPeople,
   IconLayers,
-} from "@/components/icons";
+} from '@/components/icons'
 
 const BENEFITS = [
   {
     icon: IconScrollCert,
-    title: "Recognised Certification",
-    desc: "A credential issued under one consistent institutional standard, regardless of program.",
+    title: 'Recognised Certification',
+    desc: 'A credential issued under one consistent institutional standard, regardless of program.',
   },
   {
     icon: IconIdCard,
-    title: "Digital & Physical ID",
-    desc: "Every certified practitioner receives a certificate and a pocket credential card.",
+    title: 'Digital & Physical ID',
+    desc: 'Every certified practitioner receives a certificate and a pocket credential card.',
   },
   {
     icon: IconShieldCheck,
-    title: "Public Verification",
+    title: 'Public Verification',
     desc: "Anyone can confirm a credential's authenticity through MIHN's verification portal.",
   },
   {
     icon: IconPath,
-    title: "A Defined Pathway",
-    desc: "Programs are structured to build on one another as your practice grows.",
+    title: 'A Defined Pathway',
+    desc: 'Programs are structured to build on one another as your practice grows.',
   },
   {
     icon: IconPeople,
-    title: "Faculty Access",
-    desc: "Direct mentorship access across the certification cycle, not a one-way lecture format.",
+    title: 'Faculty Access',
+    desc: 'Direct mentorship access across the certification cycle, not a one-way lecture format.',
   },
   {
     icon: IconLayers,
-    title: "Standards You Can Cite",
-    desc: "Certification governed by MASB — a framework you can point to with employers and clients.",
+    title: 'Standards You Can Cite',
+    desc: 'Certification governed by MASB — a framework you can point to with employers and clients.',
   },
-];
+]
 
 export function Benefits() {
   return (
-    <section id="benefits" className="bg-ivory">
-      <div className="mx-auto max-w-6xl px-6 py-24 sm:py-28">
+    <section id='benefits' className='relative overflow-hidden bg-ivory'>
+      <span
+        aria-hidden
+        className='pointer-events-none absolute right-4 top-6 select-none font-display text-[5rem] font-semibold leading-none text-navy-900/[0.03] sm:text-[8rem]'
+      >
+        05
+      </span>
+      <div className='relative mx-auto max-w-6xl px-6 py-24 sm:py-28'>
         <Reveal>
           <Eyebrow>Student Benefits</Eyebrow>
-          <h2 className="font-display text-balance mt-6 max-w-2xl text-4xl font-medium leading-[1.15] text-navy-900 sm:text-5xl">
+          <h2 className='font-display text-balance mt-6 max-w-2xl text-4xl font-medium leading-[1.15] text-navy-900 sm:text-5xl'>
             What certification through MIHN carries with it.
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className='mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3'>
           {BENEFITS.map((b, i) => (
             <Reveal key={b.title} delay={i * 60}>
-              <div className="group flex gap-5">
-                <b.icon className="h-8 w-8 flex-none text-gold-600 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110" />
+              <div className='group flex gap-5'>
+                <b.icon className='h-8 w-8 flex-none text-gold-600 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110' />
                 <div>
-                  <h3 className="font-display text-lg text-navy-900">
+                  <h3 className='font-display text-lg text-navy-900'>
                     {b.title}
                   </h3>
-                  <p className="mt-2 font-sans text-sm leading-relaxed text-ink-soft">
+                  <p className='mt-2 font-sans text-sm leading-relaxed text-ink-soft'>
                     {b.desc}
                   </p>
                 </div>
@@ -72,5 +78,5 @@ export function Benefits() {
         </div>
       </div>
     </section>
-  );
+  )
 }

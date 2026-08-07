@@ -317,3 +317,22 @@ export function IconClose(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function IconUserPlaceholder(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="24" cy="17" r="8" />
+      <path d="M9 40c0-8.3 6.7-14 15-14s15 5.7 15 14" />
+    </svg>
+  );
+}
+
+export function IconCameraBadge(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="6" y="15" width="36" height="26" rx="4" />
+      <path d="M17 15l3-6h8l3 6" />
+      <circle cx="24" cy="28" r="7" />
+    </svg>
+  );
+}

@@ -31,7 +31,7 @@ const LEGAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-navy-900 text-ivory/80">
+    <footer className="bg-navy-900 text-ivory/80">
       <div className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
@@ -125,25 +125,31 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <IconMail className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
                 <a
-                  href="mailto:admissions@mihn.edu.in"
+                  href="mailto:mihninstitute@gmail.com"
                   className="font-sans text-sm text-ivory/65 transition-colors hover:text-ivory"
                 >
-                  admissions@mihn.edu.in
+                  mihninstitute@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <IconPhone className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
                 <a
-                  href="tel:+911140000000"
+                  href="tel:+917357325855"
                   className="font-sans text-sm text-ivory/65 transition-colors hover:text-ivory"
                 >
-                  +91 11 4000 0000
+                  +91 73573 25855
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <IconPin className="mt-0.5 h-4 w-4 flex-none text-gold-400" />
-                <span className="font-sans text-sm text-ivory/65">
-                  New Delhi, India
+                <span className="font-sans text-sm leading-relaxed text-ivory/65">
+                  Diet Univeerse Health Care
+                  <br />
+                  (MIHN – Multiverse Institute of Health &amp; Nutrition)
+                  <br />
+                  Block A, Parsi Building, Abu Road
+                  <br />
+                  Ambaji Road, Sirohi, Rajasthan – 307026
                 </span>
               </li>
             </ul>

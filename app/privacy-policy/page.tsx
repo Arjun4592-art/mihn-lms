@@ -33,10 +33,10 @@ export default function PrivacyPolicyPage() {
       <p>
         For any questions about how your information is handled, write to{" "}
         <a
-          href="mailto:admissions@mihn.edu.in"
+          href="mailto:mihninstitute@gmail.com"
           className="text-gold-600 underline underline-offset-4"
         >
-          admissions@mihn.edu.in
+          mihninstitute@gmail.com
         </a>
         .
       </p>

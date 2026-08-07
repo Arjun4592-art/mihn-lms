@@ -291,7 +291,7 @@ export function VerifyForm({ initialId }: { initialId?: string }) {
                 MIHN certification records. Please verify the Certificate ID
                 or contact{" "}
                 <a
-                  href="mailto:support@mihn.edu.in"
+                  href="mailto:mihninstitute@gmail.com"
                   className="text-gold-600 underline underline-offset-4"
                 >
                   MIHN Support
