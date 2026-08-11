@@ -13,9 +13,9 @@ export function Hero() {
           <Image
             src='/brand/submark.png'
             alt='Diet Univeerse'
-            width={28}
-            height={28}
-            className='h-7 w-7 flex-none transition-transform duration-700 ease-out hover:rotate-[360deg]'
+            width={60}
+            height={60}
+            className='h-15 w-15 flex-none transition-transform duration-700 ease-out hover:rotate-[360deg]'
           />
           <p className='font-label text-[11px] font-semibold uppercase tracking-[0.32em] text-gold-300'>
             An Education Initiative by Diet Univeerse

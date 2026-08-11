@@ -30,9 +30,9 @@ export function About() {
               <Image
                 src='/brand/submark.png'
                 alt='Diet Univeerse'
-                width={32}
-                height={32}
-                className='h-8 w-8 flex-none transition-transform duration-700 ease-out hover:rotate-[360deg]'
+                width={60}
+                height={60}
+                className='h-15 w-15 flex-none transition-transform duration-700 ease-out hover:rotate-[360deg]'
               />
               <p className='font-sans text-sm leading-snug text-ink-soft'>
                 <span className='font-semibold text-navy-900'>
