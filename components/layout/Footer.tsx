@@ -46,9 +46,9 @@ export default function Footer() {
               <Image
                 src='/brand/submark.png'
                 alt='Diet Univeerse'
-                width={60}
-                height={60}
-                className='h-15 w-15 flex-none rounded-full transition-transform duration-700 ease-out hover:rotate-[360deg]'
+                width={80}
+                height={80}
+                className='h-20 w-20 flex-none rounded-full transition-transform duration-700 ease-out hover:rotate-[30deg]'
               />
             </div>
             <p className='mt-5 max-w-xs font-sans text-sm leading-relaxed text-ivory/60'>

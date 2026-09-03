@@ -1,65 +1,66 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server'
 import {
   requireAdmin,
   getCertificateAdmin,
   updateCertificate,
   deleteCertificate,
-  listCertificatesForStudent,
-} from "@/lib/certificates";
+} from '@/lib/certificates'
 
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic'
 
 function errorResponse(err: unknown) {
-  const status = (err as { status?: number })?.status ?? 400;
-  const message = err instanceof Error ? err.message : "Something went wrong.";
-  return NextResponse.json({ error: message }, { status });
+  const status = (err as { status?: number })?.status ?? 400
+  const message = err instanceof Error ? err.message : 'Something went wrong.'
+  return NextResponse.json({ error: message }, { status })
 }
 
-type Params = { certificateId: string };
+type Params = { certificateId: string }
 
 export async function GET(
   request: NextRequest,
-  context: { params: Promise<Params> }
+  context: { params: Promise<Params> },
 ) {
   try {
-    await requireAdmin(request);
-    const { certificateId } = await context.params;
-    const certificate = await getCertificateAdmin(certificateId);
+    await requireAdmin(request)
+    const { certificateId } = await context.params
+    const certificate = await getCertificateAdmin(certificateId)
     if (!certificate) {
-      return NextResponse.json({ error: "Certificate not found." }, { status: 404 });
+      return NextResponse.json(
+        { error: 'Certificate not found.' },
+        { status: 404 },
+      )
     }
-    const siblingCertificates = await listCertificatesForStudent(certificate.studentId);
-    return NextResponse.json({ certificate, siblingCertificates });
+    return NextResponse.json({ certificate })
   } catch (err) {
-    return errorResponse(err);
+    return errorResponse(err)
   }
 }
 
 export async function PUT(
   request: NextRequest,
-  context: { params: Promise<Params> }
+  context: { params: Promise<Params> },
 ) {
   try {
-    await requireAdmin(request);
-    const { certificateId } = await context.params;
-    const body = await request.json();
-    const certificate = await updateCertificate(certificateId, body);
-    return NextResponse.json({ certificate });
+    await requireAdmin(request)
+    const { certificateId } = await context.params
+    const body = await request.json()
+    const certificate = await updateCertificate(certificateId, body)
+    return NextResponse.json({ certificate })
   } catch (err) {
-    return errorResponse(err);
+    return errorResponse(err)
   }
 }
 
 export async function DELETE(
   request: NextRequest,
-  context: { params: Promise<Params> }
+  context: { params: Promise<Params> },
 ) {
   try {
-    await requireAdmin(request);
-    const { certificateId } = await context.params;
-    await deleteCertificate(certificateId);
-    return NextResponse.json({ ok: true });
+    await requireAdmin(request)
+    const { certificateId } = await context.params
+    await deleteCertificate(certificateId)
+    return NextResponse.json({ ok: true })
   } catch (err) {
-    return errorResponse(err);
+    return errorResponse(err)
   }
 }
