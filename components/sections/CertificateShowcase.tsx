@@ -15,7 +15,7 @@ export function CertificateShowcase() {
       </span>
       <div className='relative mx-auto max-w-6xl px-6 py-24 sm:py-28'>
         <Reveal>
-          <Eyebrow>Sample Certificate &amp; ID</Eyebrow>
+          <Eyebrow>Sample Certificate</Eyebrow>
           <h2 className='font-display text-balance mt-6 max-w-2xl text-4xl font-medium leading-[1.15] text-navy-900 sm:text-5xl'>
             What a certified practitioner carries.
           </h2>
