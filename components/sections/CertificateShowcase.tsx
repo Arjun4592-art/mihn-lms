@@ -20,9 +20,9 @@ export function CertificateShowcase() {
             What a certified practitioner carries.
           </h2>
           <p className='mt-6 max-w-2xl font-sans text-sm leading-relaxed text-ink-soft'>
-            Illustrative sample only — the name, dates and identifier shown
-            here are for preview purposes and do not represent a real
-            certification record.
+            Illustrative sample only — the name, dates and identifier shown here
+            are for preview purposes and do not represent a real certification
+            record.
           </p>
         </Reveal>
 
@@ -43,7 +43,7 @@ export function CertificateShowcase() {
             />
           </Reveal>
 
-          {/* ID card mock */}
+          {/* ID card mock
           <Reveal delay={180} className='mx-auto w-full max-w-[280px]'>
             <div className='relative aspect-[1.586/1] w-full overflow-hidden rounded-xl bg-navy-900 p-5 text-ivory shadow-xl shadow-navy-900/20 transition-transform duration-500 hover:rotate-1 hover:scale-[1.03]'>
               <SealMotif className='pointer-events-none absolute -bottom-10 -right-10 h-40 w-40 text-gold-500/10' />
@@ -70,7 +70,7 @@ export function CertificateShowcase() {
             <p className='mt-4 text-center font-sans text-xs text-ink-faint'>
               Pocket credential card
             </p>
-          </Reveal>
+          </Reveal> */}
         </div>
       </div>
     </section>
