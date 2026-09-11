@@ -19,7 +19,7 @@ export function Affiliations() {
           <p className='mt-7 max-w-2xl font-sans text-base leading-relaxed text-ink-soft'>
             MIHN maintains international professional affiliations and
             continuing professional development recognition through its approved
-            UK-based education partners. These relationships support the
+            UK-based(<span aria-hidden='true'>🇬🇧</span>) education partners. These relationships support the
             institute&rsquo;s commitment to structured professional learning,
             quality standards and continuing development across health,
             nutrition and fitness education.
