@@ -54,7 +54,7 @@ export function Programs() {
         aria-hidden
         className='pointer-events-none absolute right-4 top-6 select-none font-display text-[5rem] font-semibold leading-none text-navy-900/[0.03] sm:text-[8rem]'
       >
-        02
+        03
       </span>
       <div className='relative mx-auto max-w-6xl px-6 py-24 sm:py-28'>
         <Reveal className='flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end'>

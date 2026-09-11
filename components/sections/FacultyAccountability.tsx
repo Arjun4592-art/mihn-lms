@@ -37,7 +37,7 @@ export function FacultyAccountability() {
         aria-hidden
         className='pointer-events-none absolute right-4 top-6 select-none font-display text-[5rem] font-semibold leading-none text-navy-900/[0.03] sm:text-[8rem]'
       >
-        04
+        05
       </span>
 
       <div className='relative mx-auto max-w-6xl px-6 py-24 sm:py-28'>
