@@ -38,14 +38,13 @@ export function Affiliations() {
             <p className='flex max-w-md flex-col gap-1.5 font-sans text-sm font-medium leading-snug text-navy-900 sm:max-w-2xl sm:flex-row sm:items-center sm:justify-center sm:gap-0'>
               <span>
                 International Health and Fitness Association — IHFA (UK){' '}
-                <span aria-hidden='true'>&#127468;&#127463;</span>
+                <span aria-hidden='true'>🇬🇧</span>
               </span>
               <span className='hidden text-ink-faint sm:mx-3 sm:inline'>
                 &middot;
               </span>
               <span>
-                CPD Worldwide (UK){' '}
-                <span aria-hidden='true'>&#127468;&#127463;</span> —
+                CPD Worldwide (UK) <span aria-hidden='true'>🇬🇧</span> —
                 Accreditation &amp; Certification, Approved Provider
               </span>
             </p>
