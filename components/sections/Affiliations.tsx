@@ -8,12 +8,6 @@ export function Affiliations() {
       id='affiliations'
       className='relative overflow-hidden bg-[#f8f3e8]'
     >
-      <span
-        aria-hidden
-        className='pointer-events-none absolute right-4 top-6 select-none font-display text-[5rem] font-semibold leading-none text-navy-900/[0.03] sm:text-[8rem]'
-      >
-        02
-      </span>
       <div className='relative mx-auto max-w-6xl px-6 py-24 sm:py-28'>
         <Reveal>
           <Eyebrow>
@@ -25,7 +19,7 @@ export function Affiliations() {
           <p className='mt-7 max-w-2xl font-sans text-base leading-relaxed text-ink-soft'>
             MIHN maintains international professional affiliations and
             continuing professional development recognition through its approved
-            education partners. These relationships support the
+            UK-based education partners. These relationships support the
             institute&rsquo;s commitment to structured professional learning,
             quality standards and continuing development across health,
             nutrition and fitness education.
@@ -41,6 +35,19 @@ export function Affiliations() {
               height={294}
               className='h-auto w-full max-w-[720px]'
             />
+            <p className='flex max-w-md flex-col gap-1.5 font-sans text-sm font-medium leading-snug text-navy-900 sm:max-w-2xl sm:flex-row sm:items-center sm:justify-center sm:gap-0'>
+              <span>
+                International Health and Fitness Association — IHFA (UK){' '}
+                <span aria-hidden='true'>🇬🇧</span>
+              </span>
+              <span className='hidden text-ink-faint sm:mx-3 sm:inline'>
+                &middot;
+              </span>
+              <span>
+                CPD Worldwide (UK) <span aria-hidden='true'>🇬🇧</span> —
+                Accreditation &amp; Certification, Approved Provider
+              </span>
+            </p>
           </div>
         </Reveal>
       </div>
