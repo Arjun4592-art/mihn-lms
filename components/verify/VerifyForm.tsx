@@ -283,10 +283,11 @@ export function VerifyForm({ initialId }: { initialId?: string }) {
                     Validity
                   </dt>
                   <dd className='mt-1 font-sans text-sm text-ink'>
-                    {VALIDITY_LABEL[result.validity]}
-                    {result.validity !== 'lifetime' && result.validUntil
-                      ? ` (until ${formatDate(result.validUntil)})`
-                      : ''}
+                    {result.validity === 'lifetime'
+                      ? VALIDITY_LABEL[result.validity]
+                      : result.validUntil
+                        ? formatDate(result.validUntil)
+                        : VALIDITY_LABEL[result.validity]}
                   </dd>
                 </div>
                 <div>
